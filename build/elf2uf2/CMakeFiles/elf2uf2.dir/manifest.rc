@@ -1,0 +1,2 @@
+#pragma code_page(65001)
+1 /* CREATEPROCESS_MANIFEST_RESOURCE_ID */ 24 /* RT_MANIFEST */ "E:/Users/WillowKoishi/Documents/2040py/C2040/pico-uart98/RP2040toPC98/build/elf2uf2/CMakeFiles/elf2uf2.dir/embed.manifest"

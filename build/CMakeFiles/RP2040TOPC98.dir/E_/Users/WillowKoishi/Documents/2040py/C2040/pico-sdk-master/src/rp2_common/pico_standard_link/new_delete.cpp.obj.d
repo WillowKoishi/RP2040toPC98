@@ -1,0 +1,25 @@
+CMakeFiles\RP2040TOPC98.dir\E_\Users\WillowKoishi\Documents\2040py\C2040\pico-sdk-master\src\rp2_common\pico_standard_link\new_delete.cpp.obj: \
+ E:\Users\WillowKoishi\Documents\2040py\C2040\pico-sdk-master\src\rp2_common\pico_standard_link\new_delete.cpp \
+ d:\progra~2\gnuarm~1\102021~1.10\arm-none-eabi\include\c++\10.3.1\cstdlib \
+ d:\progra~2\gnuarm~1\102021~1.10\arm-none-eabi\include\c++\10.3.1\arm-none-eabi\thumb\v6-m\nofp\bits\c++config.h \
+ d:\progra~2\gnuarm~1\102021~1.10\arm-none-eabi\include\c++\10.3.1\arm-none-eabi\thumb\v6-m\nofp\bits\os_defines.h \
+ d:\progra~2\gnuarm~1\102021~1.10\arm-none-eabi\include\c++\10.3.1\arm-none-eabi\thumb\v6-m\nofp\bits\cpu_defines.h \
+ d:\progra~2\gnuarm~1\102021~1.10\arm-none-eabi\include\c++\10.3.1\pstl\pstl_config.h \
+ d:\progra~2\gnuarm~1\102021~1.10\arm-none-eabi\include\stdlib.h \
+ d:\progra~2\gnuarm~1\102021~1.10\arm-none-eabi\include\machine\ieeefp.h \
+ d:\progra~2\gnuarm~1\102021~1.10\arm-none-eabi\include\_ansi.h \
+ d:\progra~2\gnuarm~1\102021~1.10\arm-none-eabi\include\newlib.h \
+ d:\progra~2\gnuarm~1\102021~1.10\arm-none-eabi\include\_newlib_version.h \
+ d:\progra~2\gnuarm~1\102021~1.10\arm-none-eabi\include\sys\config.h \
+ d:\progra~2\gnuarm~1\102021~1.10\arm-none-eabi\include\sys\features.h \
+ d:\progra~2\gnuarm~1\102021~1.10\lib\gcc\arm-none-eabi\10.3.1\include\stddef.h \
+ d:\progra~2\gnuarm~1\102021~1.10\arm-none-eabi\include\sys\reent.h \
+ d:\progra~2\gnuarm~1\102021~1.10\arm-none-eabi\include\_ansi.h \
+ d:\progra~2\gnuarm~1\102021~1.10\arm-none-eabi\include\sys\_types.h \
+ d:\progra~2\gnuarm~1\102021~1.10\arm-none-eabi\include\machine\_types.h \
+ d:\progra~2\gnuarm~1\102021~1.10\arm-none-eabi\include\machine\_default_types.h \
+ d:\progra~2\gnuarm~1\102021~1.10\arm-none-eabi\include\sys\lock.h \
+ d:\progra~2\gnuarm~1\102021~1.10\arm-none-eabi\include\sys\cdefs.h \
+ d:\progra~2\gnuarm~1\102021~1.10\arm-none-eabi\include\machine\stdlib.h \
+ d:\progra~2\gnuarm~1\102021~1.10\arm-none-eabi\include\alloca.h \
+ d:\progra~2\gnuarm~1\102021~1.10\arm-none-eabi\include\c++\10.3.1\bits\std_abs.h
