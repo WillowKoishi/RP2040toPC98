@@ -29,6 +29,10 @@ CMakeFiles\RP2040TOPC98.dir\main.c.obj: \
  d:\progra~2\gnuarm~1\102021~1.10\arm-none-eabi\include\sys\sched.h \
  d:\progra~2\gnuarm~1\102021~1.10\arm-none-eabi\include\machine\types.h \
  d:\progra~2\gnuarm~1\102021~1.10\arm-none-eabi\include\sys\stdio.h \
+ d:\progra~2\gnuarm~1\102021~1.10\arm-none-eabi\include\stdlib.h \
+ d:\progra~2\gnuarm~1\102021~1.10\arm-none-eabi\include\machine\stdlib.h \
+ d:\progra~2\gnuarm~1\102021~1.10\arm-none-eabi\include\alloca.h \
+ d:\progra~2\gnuarm~1\102021~1.10\arm-none-eabi\include\sys\timeb.h \
  E:\Users\WillowKoishi\Documents\2040py\C2040\pico-sdk-master\src\common\pico_stdlib\include/pico/stdlib.h \
  E:\Users\WillowKoishi\Documents\2040py\C2040\pico-sdk-master\src\common\pico_base\include/pico.h \
  E:\Users\WillowKoishi\Documents\2040py\C2040\pico-sdk-master\src\common\pico_base\include/pico/types.h \

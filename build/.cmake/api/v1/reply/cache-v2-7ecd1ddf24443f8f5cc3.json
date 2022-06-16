@@ -183,7 +183,7 @@
 				}
 			],
 			"type" : "STRING",
-			"value" : "MinSizeRel"
+			"value" : "Debug"
 		},
 		{
 			"name" : "CMAKE_CACHEFILE_DIR",
@@ -1290,6 +1290,18 @@
 			"value" : "DOXYGEN_EXECUTABLE-NOTFOUND"
 		},
 		{
+			"name" : "FAMILY_MCUS",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : ""
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : "RP2040"
+		},
+		{
 			"name" : "FIND_PACKAGE_MESSAGE_DETAILS_Python3",
 			"properties" : 
 			[
@@ -1455,7 +1467,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : " E:/Users/WillowKoishi/Documents/2040py/C2040/pico-sdk-master/src/rp2_common/cmsis E:/Users/WillowKoishi/Documents/2040py/C2040/pico-sdk-master/src/rp2040/hardware_regs E:/Users/WillowKoishi/Documents/2040py/C2040/pico-sdk-master/src/rp2_common/cmsis E:/Users/WillowKoishi/Documents/2040py/C2040/pico-sdk-master/src/rp2040/hardware_regs E:/Users/WillowKoishi/Documents/2040py/C2040/pico-sdk-master/src/rp2_common/cmsis E:/Users/WillowKoishi/Documents/2040py/C2040/pico-sdk-master/src/rp2040/hardware_regs E:/Users/WillowKoishi/Documents/2040py/C2040/pico-sdk-master/src/rp2_common/cmsis E:/Users/WillowKoishi/Documents/2040py/C2040/pico-sdk-master/src/rp2040/hardware_regs E:/Users/WillowKoishi/Documents/2040py/C2040/pico-sdk-master/src/rp2_common/cmsis E:/Users/WillowKoishi/Documents/2040py/C2040/pico-sdk-master/src/rp2040/hardware_regs"
+			"value" : " E:/Users/WillowKoishi/Documents/2040py/C2040/pico-sdk-master/src/rp2_common/cmsis E:/Users/WillowKoishi/Documents/2040py/C2040/pico-sdk-master/src/rp2040/hardware_regs E:/Users/WillowKoishi/Documents/2040py/C2040/pico-sdk-master/src/rp2_common/cmsis E:/Users/WillowKoishi/Documents/2040py/C2040/pico-sdk-master/src/rp2040/hardware_regs E:/Users/WillowKoishi/Documents/2040py/C2040/pico-sdk-master/src/rp2_common/cmsis E:/Users/WillowKoishi/Documents/2040py/C2040/pico-sdk-master/src/rp2040/hardware_regs E:/Users/WillowKoishi/Documents/2040py/C2040/pico-sdk-master/src/rp2_common/cmsis E:/Users/WillowKoishi/Documents/2040py/C2040/pico-sdk-master/src/rp2040/hardware_regs E:/Users/WillowKoishi/Documents/2040py/C2040/pico-sdk-master/src/rp2_common/cmsis E:/Users/WillowKoishi/Documents/2040py/C2040/pico-sdk-master/src/rp2040/hardware_regs E:/Users/WillowKoishi/Documents/2040py/C2040/pico-sdk-master/src/rp2_common/cmsis E:/Users/WillowKoishi/Documents/2040py/C2040/pico-sdk-master/src/rp2040/hardware_regs E:/Users/WillowKoishi/Documents/2040py/C2040/pico-sdk-master/src/rp2_common/cmsis E:/Users/WillowKoishi/Documents/2040py/C2040/pico-sdk-master/src/rp2040/hardware_regs E:/Users/WillowKoishi/Documents/2040py/C2040/pico-sdk-master/src/rp2_common/cmsis E:/Users/WillowKoishi/Documents/2040py/C2040/pico-sdk-master/src/rp2040/hardware_regs E:/Users/WillowKoishi/Documents/2040py/C2040/pico-sdk-master/src/rp2_common/cmsis E:/Users/WillowKoishi/Documents/2040py/C2040/pico-sdk-master/src/rp2040/hardware_regs E:/Users/WillowKoishi/Documents/2040py/C2040/pico-sdk-master/src/rp2_common/cmsis E:/Users/WillowKoishi/Documents/2040py/C2040/pico-sdk-master/src/rp2040/hardware_regs E:/Users/WillowKoishi/Documents/2040py/C2040/pico-sdk-master/src/rp2_common/cmsis E:/Users/WillowKoishi/Documents/2040py/C2040/pico-sdk-master/src/rp2040/hardware_regs E:/Users/WillowKoishi/Documents/2040py/C2040/pico-sdk-master/src/rp2_common/cmsis E:/Users/WillowKoishi/Documents/2040py/C2040/pico-sdk-master/src/rp2040/hardware_regs E:/Users/WillowKoishi/Documents/2040py/C2040/pico-sdk-master/src/rp2_common/cmsis E:/Users/WillowKoishi/Documents/2040py/C2040/pico-sdk-master/src/rp2040/hardware_regs E:/Users/WillowKoishi/Documents/2040py/C2040/pico-sdk-master/src/rp2_common/cmsis E:/Users/WillowKoishi/Documents/2040py/C2040/pico-sdk-master/src/rp2040/hardware_regs E:/Users/WillowKoishi/Documents/2040py/C2040/pico-sdk-master/src/rp2_common/cmsis E:/Users/WillowKoishi/Documents/2040py/C2040/pico-sdk-master/src/rp2040/hardware_regs E:/Users/WillowKoishi/Documents/2040py/C2040/pico-sdk-master/src/rp2_common/cmsis E:/Users/WillowKoishi/Documents/2040py/C2040/pico-sdk-master/src/rp2040/hardware_regs E:/Users/WillowKoishi/Documents/2040py/C2040/pico-sdk-master/src/rp2_common/cmsis E:/Users/WillowKoishi/Documents/2040py/C2040/pico-sdk-master/src/rp2040/hardware_regs E:/Users/WillowKoishi/Documents/2040py/C2040/pico-sdk-master/src/rp2_common/cmsis E:/Users/WillowKoishi/Documents/2040py/C2040/pico-sdk-master/src/rp2040/hardware_regs E:/Users/WillowKoishi/Documents/2040py/C2040/pico-sdk-master/src/rp2_common/cmsis E:/Users/WillowKoishi/Documents/2040py/C2040/pico-sdk-master/src/rp2040/hardware_regs E:/Users/WillowKoishi/Documents/2040py/C2040/pico-sdk-master/src/rp2_common/cmsis E:/Users/WillowKoishi/Documents/2040py/C2040/pico-sdk-master/src/rp2040/hardware_regs E:/Users/WillowKoishi/Documents/2040py/C2040/pico-sdk-master/src/rp2_common/cmsis E:/Users/WillowKoishi/Documents/2040py/C2040/pico-sdk-master/src/rp2040/hardware_regs"
 		},
 		{
 			"name" : "PICO_DOXYGEN_PATHS",
