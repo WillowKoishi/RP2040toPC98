@@ -22,13 +22,13 @@
 #define G_SHIFT 10
 #define G_Z 11
 #define G_X 12
-#define G_C 13
-#define G_D 14
-#define G_ESC 15
-#define G_UP 16
-#define G_DOWN 17
-#define G_LEFT 18
-#define G_RIGHT 19
+#define G_C 14
+#define G_D 13
+#define G_ESC 19
+#define G_UP 15
+#define G_DOWN 18
+#define G_LEFT 16
+#define G_RIGHT 17
 typedef struct P98KEYs
 {
     int key_code;
@@ -47,6 +47,7 @@ void setS98Keys(int index,int keycode,int keygpio){
     lP98KEYS[index].key_state=0;
     lP98KEYS[index].key_state2=0;
 }
+
 void init_keys(){
     setS98Keys(0,K_SHIFT,G_SHIFT);
     setS98Keys(1,K_Z,G_Z);
@@ -61,12 +62,12 @@ void init_keys(){
 }
 //GPIO: RTY 2  RDY 3  RXD 4
 void send98(int msg){
-    while(gpio_get(2));
+    while(gpio_get(3));
     char data = msg;
     uart_putc_raw(UART_ID,data);
-    while(!gpio_get(2));
-    sleep_us(20);
-    if(!gpio_get(3)){
+    while(!gpio_get(3));
+    sleep_us(25);
+    if(!gpio_get(2)){
         send98(msg);
     }
 }
@@ -77,27 +78,28 @@ long board_millis(){
 void pushing(int i){
     //int key_code,long key_state,int key_state2,int mGPIO
     if(gpio_get(lP98KEYS[i].gpio)==0){
+        sleep_us(200);
         if(lP98KEYS[i].key_state==0){
             send98(lP98KEYS[i].key_code);//make
             lP98KEYS[i].key_state = board_millis();
             gpio_put(25,1);
             return;
         }
-        else if((gpio_get(lP98KEYS[i].gpio)==0)&&(lP98KEYS[i].key_state > 0 ) && ((board_millis()-lP98KEYS[i].key_state) >=500)){
-            send98(lP98KEYS[i].key_code | 0x80);//break,and waiting 0.5s make
+        else if((lP98KEYS[i].key_code != K_SHIFT)&&(gpio_get(lP98KEYS[i].gpio)==0)&&(lP98KEYS[i].key_state > 0 ) && ((board_millis()-lP98KEYS[i].key_state) >=500)){
+            //send98(lP98KEYS[i].key_code | 0x80);//break,and waiting 0.5s make
             lP98KEYS[i].key_state = - board_millis();
             gpio_put(25,0);
             return;
         }
-        else if((gpio_get(lP98KEYS[i].gpio)==0)&&(lP98KEYS[i].key_state2 == 0 ) && (lP98KEYS[i].key_state < 0) && ((board_millis()+lP98KEYS[i].key_state) >= 30)){
+        else if((lP98KEYS[i].key_code != K_SHIFT) &&(gpio_get(lP98KEYS[i].gpio)==0)&&(lP98KEYS[i].key_state2 == 0 ) && (lP98KEYS[i].key_state < 0) && ((board_millis()+lP98KEYS[i].key_state) >= 30)){
             send98(lP98KEYS[i].key_code);     //still push,then make again
             lP98KEYS[i].key_state = - board_millis();
             lP98KEYS[i].key_state2 = 1;
             gpio_put(25,1);
             return;
         }
-        else if((gpio_get(lP98KEYS[i].gpio)==0)&&(lP98KEYS[i].key_state2 == 1 ) && (lP98KEYS[i].key_state < 0) && ((board_millis()+lP98KEYS[i].key_state) >= 30)){
-            send98(lP98KEYS[i].key_code | 0x80);    //still push,waiting 30ms,break
+        else if((lP98KEYS[i].key_code != K_SHIFT) &&(gpio_get(lP98KEYS[i].gpio)==0)&&(lP98KEYS[i].key_state2 == 1 ) && (lP98KEYS[i].key_state < 0) && ((board_millis()+lP98KEYS[i].key_state) >= 30)){
+            //send98(lP98KEYS[i].key_code | 0x80);    //still push,waiting 30ms,break
             lP98KEYS[i].key_state= - board_millis();
             lP98KEYS[i].key_state2= 0;
             gpio_put(25,0);
@@ -112,6 +114,7 @@ void pushing(int i){
             lP98KEYS[i].key_state = 0;
             lP98KEYS[i].key_state2 = 0;
             gpio_put(25,0);
+            send98(lP98KEYS[i].key_code | 0x80);
             return;
         }
         else{
@@ -131,7 +134,7 @@ int main() {
 
     uart_init(UART_ID, 19200);
     gpio_set_function(UART_TX_PIN, GPIO_FUNC_UART);//设置TX
-    uart_set_format(UART_ID,8,2,UART_PARITY_ODD);
+    uart_set_format(UART_ID,8,1,UART_PARITY_ODD);
     sleep_ms(1000);
     gpio_init(26);
     gpio_set_dir(26, GPIO_OUT);
@@ -146,9 +149,6 @@ int main() {
         for(i=0;i<10;i++){
             pushing(i);
         }
-    gpio_init(28);
-    gpio_set_dir(28, GPIO_OUT);
-    gpio_put(28,1);
     }
     
 }
